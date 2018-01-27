@@ -15,8 +15,7 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
 
-  setUsername(event: any) {
-    this.username = (<HTMLInputElement>event.target).value;
+  checkInput() {
     this.allowReset = (this.username != '') ? true : false;
   }
 
