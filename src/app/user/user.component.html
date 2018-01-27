@@ -4,5 +4,12 @@
   <input type="text" class="form-control" (input)="checkInput()" [(ngModel)]="username">
   <span class="input-group-btn">
     <button class="btn btn-primary" (click)="resetUsername()" [disabled]="!allowReset">Reset</button>
+    
+    <!-- Instructor's Answer-->
+    <!-- <button 
+      class="btn btn-primary" 
+      (click)="username = ''" 
+      [disabled]="username === ''">Reset</button>  -->
+  
   </span>
 </div>
